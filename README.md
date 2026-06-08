@@ -1,6 +1,6 @@
 # Heart Disease Risk Prediction System
 
-This project is a machine learning-based web application that predicts whether a patient has a lower or higher risk of heart disease based on clinical health indicators. The model was trained using patient health data, evaluated with multiple machine learning algorithms, and integrated into a Streamlit web application for interactive prediction.
+This project is a machine learning-based web application that predicts whether a patient may have a lower or higher risk of heart disease based on clinical health indicators. The model was trained using patient health data, evaluated with multiple machine learning algorithms, and integrated into a Streamlit web application for interactive prediction.
 
 ## Features
 
@@ -9,6 +9,7 @@ This project is a machine learning-based web application that predicts whether a
 * Display prediction confidence score
 * Show prediction probability for both classes
 * Compare Logistic Regression, Random Forest, and SVM models
+* Remove duplicate records to reduce data leakage and improve evaluation reliability
 * Includes a Streamlit web application for interactive prediction
 
 ## Dataset
@@ -50,9 +51,9 @@ Duplicate records were removed before training to reduce data leakage and improv
 
 * `Heart_Disease_Risk_Prediction.ipynb` - Google Colab notebook containing data loading, preprocessing, duplicate removal, model training, evaluation, feature importance, and model saving steps.
 * `app.py` - Streamlit web application for entering patient details and predicting heart disease risk.
-* `heart_disease_model.pkl` - Saved trained Logistic Regression model pipeline.
-* `feature_names.pkl` - Saved feature names used during model training.
-* `model_results.pkl` - Saved model comparison results.
+* `models/heart_disease_model.pkl` - Saved trained Logistic Regression model pipeline.
+* `models/feature_names.pkl` - Saved feature names used during model training.
+* `models/model_results.pkl` - Saved model comparison results.
 * `requirements.txt` - Required Python packages.
 * `README.md` - Project documentation.
 
